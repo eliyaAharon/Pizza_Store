@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliya's Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="https://c0.wallpaperflare.com/preview/839/412/980/food-and-drink-pizza-pizzas-tomato.jpg"
+         alt="Image description" height="100%" width="100%">
+    <div class="image-text">
+        <p class="title">Eliya's Pizza</p>
+        <label class="title">Order your pizza!</label>
+
+        <div id="order_pizza">
+            <br>
+            <span id="dough">Enter your dough</span>
+            <br><br>
+            <select id="dough-select" value="Normal">
+                <option value="Normal"> Normal</option>
+                <option value="whole wheat">whole wheat</option>
+                <option value="thin">thin</option>
+            </select>
+            <br><br>
+
+            <span id="size">Enter pizza size</span>
+            <br><br>
+            <select id="size-select" value="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+            <br><br>
+
+            <span id="toppings">Add toppings to your pizza</span>
+            <br>
+            <form>
+                <input type="checkbox" name="toppings[]" value="mushrooms" id="mushrooms">
+                <label for="mushrooms">< mushrooms</label>
+                <input type="checkbox" name="toppings[]" value="peppers" id="peppers">
+                <label for="peppers">< peppers</label>
+                <input type="checkbox" name="toppings[]" value="olives" id="olives">
+                <label for="olives">< olives</label>
+                <input type="checkbox" name="toppings[]" value="onions" id="onions">
+                <label for="onions">< onion</label>
+                <input type="checkbox" name="toppings[]" value="tomatoes" id="tomatoes">
+                <label for="tomatoes">< tomato</label>
+                <input type="checkbox" name="toppings[]" value="pepperoni" id="pepperoni">
+                <label for="pepperoni">< pepperoni</label>
+            </form>
+            <br>
+            <button id="button" onclick="bill_amount()">Order a Pizza</button>
+
+        </div>
+
+        <div id="bill-res">
+            <h3 id="total-bill"></h3>
+            <h5 id="order-description"></h5>
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>
